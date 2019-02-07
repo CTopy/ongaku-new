@@ -1,0 +1,83 @@
+@font-face {
+font-family: 'New Athletic M54';
+src: url("../medias/fonts/New Athletic M54.ttf");
+}
+
+body {
+    background-image: url(../medias/images/background/backgroundAPropos.jpeg);
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+main{
+    height: 84.5vh;
+    width: 100vw;
+}
+
+.contenu {
+    display: block;
+    text-align: center;
+    font-family: 'rajdhanibold'
+}
+h1{
+    margin: 0;
+}
+.titre{
+    margin-left: 16vh;
+    padding: 0;
+    font-size: 6vh;
+    font-family: 'New Athletic M54';
+    margin-bottom:0;
+    margin-top: 0;
+}
+.pre0 p{
+    background-color: #7FDDB3;
+    color: white;
+    border-radius: 15px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 0;
+    font-size: 4vh;
+    padding: 5vh;
+}
+
+.pre1 p{
+    background-color: #676767;
+    border-radius: 15px;
+    margin-left: 12vw;
+    margin-right:12vw;
+    padding: 4.5vh;
+    color: white;
+    font-size: 3vh;
+}
+
+.pre2 p{
+    background-color: #676767;
+    border-radius: 15px;
+    margin-left: 12vw;
+    margin-right:12vw;
+    padding: 4.5vh;
+    color: white;
+    font-size: 3vh;
+}
+.pre3 p{
+    background-color: #676767;
+    border-radius: 15px;
+    margin-left: 12vw;
+    margin-right:12vw;
+    padding: 4.5vh;
+    color: white;
+    font-size: 3vh;
+}
+.ongaku{
+    font-size: 50px;
+}
+.orange{
+    color:orange;
+}
+.vert{
+    color: #7FDDB3;
+}
+

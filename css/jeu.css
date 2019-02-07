@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "New Athletic";
+    src: url(/medias/fonts/New Athletic M54);
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 20;
+}
+
+
+/********************* GENERAL **************************/
+
+h2 {
+    font-size: 5vw !important;
+}
+
+body {
+    margin: 0;
+    font-family: courier new;
+    background-image: url(../medias/images/background/backgroundEnJeu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #DCDDDE;
+}
+
+h2 {
+    font-size: 50pt;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/********************** PLAYER ***************************/
+
+.infosTitre {
+    margin-bottom: 5%;
+}
+
+#player {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+#player::after {
+    display: none;
+}
+
+.infosTitre div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 50vw;
+}
+
+#titre,
+#auteur {
+    font-size: 2vw;
+    padding: 1%;
+    text-align: center;
+    text-shadow: 2px 2px 15px white;
+}
+
+#titre {
+    font-weight: bold;
+}
+
+iframe {
+    display: none;
+}
+
+#timer {
+    margin-bottom: 20px;
+    font-size: 4vw;
+    height: 20vw;
+    width: 20vw;
+    line-height: 20vw;
+    background-image: url(../medias/images/disqueNoirAccueil.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 400px;
+    text-align: center;
+    align-content: center;
+    box-shadow: inset 0px 0px 10px white;
+    color: white;
+}
+
+
+/********************** PAROLES *******************************/
+
+h2 {
+    color: #2a2a2a;
+    font-size: 60pt;
+    padding-left: 5%;
+}
+
+.paroles {
+    border-radius: 30px;
+    min-height: 60vh;
+    max-width: 40vw;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+p {
+    padding: 5%;
+    line-height: 5vh;
+    font-size: 3vh;
+}
+
+
+/********************** CHAMP TEXTE *****************************/
+
+#envoyerReponse {
+    display: none;
+}
+
+button.passer {
+    background-color: #a2ddc3;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'New Athletic M54';
+    font-size: 20pt;
+    box-shadow: 0px 0px 20px black;
+}
+
+button.passer:target {
+    box-shadow: 0px 0px 20px transparent;
+}
+
+form.passer {
+    align-self: flex-end;
+    margin-top: 3%;
+}
+
+.infosTitre+div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="text"] {
+    font-family: 'Courier new';
+    margin: 0 5% 5% 5%;
+    width: 30vw;
+    outline: none;
+}
+
+@keyframes tourner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    /*@media only screen and (max-width: 600px) {
+    #titre, #auteur {
+        font-size : 7.5pt;
+    }
+    main {
+        display : flex;
+        flex-direction: column;
+    }
+    .paroles {
+        height : 50vh;
+        width : 90vw !important;
+        font-size : 8pt;
+    }
+    
+    .paroles p {
+        width : auto;
+    }*/
+}

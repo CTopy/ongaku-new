@@ -1,0 +1,87 @@
+body {
+    background: url(../medias/images/backgroundAccueil.jpeg) no-repeat center fixed;
+    background-size: contain;
+    font-family: 'New Athletic M54';
+    background-color : #DCDDDE;
+    min-height: 100vh;
+	display : flex;
+	flex-direction: column;
+    margin : 0;
+	
+    
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+
+
+#play{
+    position : relative;
+
+}
+
+.jouer{
+    position : absolute;
+    height : 50vh;
+    top : 15vh;
+    left : 5vh;
+    z-index : 100;
+    
+}
+
+
+.disque{  
+    margin-top:10vh;
+    height : 60vh;
+    
+}
+
+
+#play::before {
+    content : "";
+    background : url(../medias/images/casqueAccueil.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width : 250%;
+    height: 250%;
+    position : absolute;
+    top:-25%;
+    left:-75%;
+    
+    
+   
+}
+
+.jouer+img {
+animation: tourner 1s linear infinite; 
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+.jouer:hover+img{
+    
+animation: tourner 1s linear infinite; 
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    
+}
+
+
+    @keyframes tourner {
+    0% {
+        transform: rotate(0deg); 
+    }
+
+    100% {
+        
+        transform: rotate(360deg); 
+    }
+}

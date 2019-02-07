@@ -1,0 +1,33 @@
+body {
+    background-image: url(../medias/images/backgroundCreer_compte.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #DCDDDE;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+}
+
+.error{
+    background-color: white;
+    border-radius: 60px;
+    padding: 20px;
+    margin: 0 380px 0 380px;
+    box-shadow: 15;
+}
+
+.titre {
+    font-size: 100px;
+}
+
+p, .titre {
+    font-family: 'rajdhanibold';
+    text-align: center;    
+}
+
+a {
+    text-decoration: none;
+    color: #F7A87D;
+}
+

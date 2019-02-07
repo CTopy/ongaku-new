@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'New Athletic M54';
+    src: url('./medias/fontsNew Athletic M54.ttf')
+}
+
+body {
+
+    background: url(../medias/images/background/backgroundResultat.png) no-repeat center fixed;
+    ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #DCDDDE;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+}
+
+main {
+    width: 75vw;
+    min-width: 640px;
+    height: 80vh;
+    min-height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    font-family: New Athletic M54;
+    position: relative;
+
+}
+
+h1 {
+    font-size: 100px;
+    position: relative;
+    padding-left: 130px;
+    margin-top: 100px;
+}
+
+h1::before {
+    content: "";
+    background: url(../medias/images/FlecheVerte.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: calc(30% - 60px);
+    width: 50px;
+    height: 50px;
+
+
+    display: block;
+    position: absolute;
+
+    height: 150%;
+    width: 100%;
+
+    left: -2%;
+    top: -21%;
+}
+
+
+#barre {
+    margin-top: auto;
+    width: 100%;
+    min-width: 520px;
+    height: 50px;
+    background-color: white;
+    border: solid 5px #D5D6D7;
+    border-radius: 30px;
+}
+
+.logoPseudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 30vh;
+    width: 80vw;
+    position: relative;
+    flex-shrink: 2;
+    flex-wrap:wrap-reverse;
+    flex-shrink: 0
+}
+
+.iconeMembre {
+    margin: 0;
+    padding: 0;
+
+    vertical-align: middle;
+    border-radius: 50%;
+    
+    height: 300px;
+	width: 300px;
+}
+
+.pseudoJoueur {
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 50%);
+    font-size: 90px;
+    height: 120px;
+    width: 0px
+
+
+}
+
+.scoreBarre {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.ombreBarre {
+    padding: 60px;
+    width: 80vw;
+    background-image: radial-gradient(farthest-corner at 50% 50%,
+    rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.scoreJoueur {
+    font-size: 60px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 33.33%;
+    color: #454545
+}
+
+.buttonFinPartie {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#rejourQuitter {
+    background-color: white;
+    border: solid 5px #9d9d9d;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 40px;
+    font-family: New Athletic M54;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px
+}
+
+button:hover {
+    cursor: pointer
+}

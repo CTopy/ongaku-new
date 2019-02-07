@@ -1,0 +1,152 @@
+/************************************** GENERAL *********************/
+body, main, h1, html, form, input {
+    margin : 0;
+    padding : 0;
+}
+
+[type="image"] {
+    height : 20vw;
+    width : auto;
+    max-height :335px;
+    
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+h1 {
+    font-size: 40pt !important;
+}
+
+/**************** POSITIONNEMENT ************************/
+
+body {
+    position : relative;
+}
+
+header {
+    position : absolute !important;
+    top : 0;
+    left : 0;
+    width : 100vw;
+}
+
+form {
+    display : flex;
+    width : 100vw;
+    height : 100vh;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+form>div {
+    display : flex;
+    width : 100vw;
+    justify-content: space-around;
+}
+
+.fieldset {
+    width : 50vw;
+    margin : 0 2vw 0 2vw;
+    height : 30vh;
+    
+    background-color : lightgrey;
+    border : none;
+    border-radius : 30px;
+    box-shadow: 0 0 15px black;
+    
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items : center;
+    overflow : hidden;
+    position : relative;
+}
+
+#choix{
+    display : flex;
+    flex-direction : column;
+    justify-content: flex-start;
+    align-items : center;
+    position : relative;
+    overflow-y: scroll;
+    border-radius: 20px;
+    width : 100%;
+}
+
+div:last-child .fieldset:last-child {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color : transparent;
+    border : none;
+    border-radius : 0;
+    box-shadow: 0 0 0 transparent;
+}
+
+h1 {
+    position : relative;
+    margin : 0 auto;
+    font-size : 
+        4.5vw !important;
+    top : 4vw;
+}
+
+#style{
+     justify-content:flex-start;
+    
+}
+
+/************************ MISE EN FORME **********************/
+
+body {
+    background-image: url(../medias/images/backgroundChoix.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #DCDDDE;
+    background-position: center;
+    max-height: 100%;
+}
+
+[type="checkbox"], [type="radio"] {
+    opacity : 0;
+    position : absolute;
+    z-index: -1;
+}
+
+:checked+label {
+    transition-property: border-bottom, font-weight;
+    transition-duration: 0.5s;
+    font-weight : bolder ;
+    border-bottom : 2px solid #E69162;
+    color: #E69162;
+} 
+
+label, h2 {
+    font-family : 'rajdhanibold';
+    text-transform: uppercase;
+}
+
+label {
+    position : relative;
+    font-size : 3vw;
+    margin-left : 5vw;
+    cursor : pointer;
+}
+
+ 
+h2 {
+    font-size : 3vw !important;
+    position : absolute;
+    top : 22vh;
+    left : 0;
+    transform-origin: top left;
+    transform : rotate(-90deg);
+    color:#636765;
+}
+
+sup {
+    font-family: 'rajdhanibold';
+}

@@ -1,0 +1,103 @@
+body {
+    background-image: url(../medias/images/backgroundCreer_compte.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #DCDDDE;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+       
+}
+main {
+    height: 50vh;
+    width : 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+body {
+    font-family: 'New Athletic M54';
+}
+h1 {
+    position: relative;
+    font-size: 9vh !important;
+}
+main #type{
+    display:flex;
+    justify-content: space-between;
+} 
+
+
+#fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    font-size: 2.4vh;
+    
+    
+}
+
+#fieldset input{
+    margin-bottom: 20px;
+    outline: none;
+    min-width:13vw;
+}
+
+
+.Avatar{
+    font-family: 'rajdhanibold';
+    font-size: 2vh;
+    padding: 10px;
+    border-radius: 10px;
+    border: white 5px solid;
+    background-color: white;
+    min-width: 9vw;
+    opacity: 0.6;
+    width: 17vw !important;
+    
+}
+
+.boutonGo{
+    position: absolute;
+    left: 70%;
+    top:110%;
+    transform: rotate(20deg);
+    font-size: 6vh;
+    background-color: #DCDDDE;
+    font-family: 'New Athletic M54';
+    border:none;
+    background-image:url("../medias/images/boutonRondVert.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    min-width:120px !important;
+}
+
+input+label{
+    margin-left:0px;
+}
+
+.liste {
+    font-size: 1.7vh;
+}
+
+#masculin{
+    width: 1vw !important;
+    min-width: 1vw !important;
+}
+#feminin{
+    width: 1vw !important;
+    min-width: 1vw !important;
+}
+#autre{
+    width: 1vw !important;
+    min-width: 1vw !important;
+}
+
+ 
+    

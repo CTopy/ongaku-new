@@ -1,0 +1,118 @@
+body {
+    background-image: url(../medias/images/backgroundSeConnecter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #DCDDDE;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+   
+    
+}
+
+main {
+    padding-top: 10vh;
+    height: 50vh;
+    width : 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: 'New Athletic M54';
+}
+
+h1 {
+    position: relative;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+}
+
+form div::before {
+    content : "";
+    width: 200px;
+    height: 200px;
+    background : url(../medias/images/casque.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top : -80px;
+    right: -80px;
+    transform : rotate(30deg);
+    z-index: -1;
+}
+
+form div label{
+    display: none;
+}
+
+div input{
+    outline: none;
+}
+
+.btnValider {
+    margin-right: 200px;
+    margin-bottom: 20px;
+    padding : 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: #5FD7A2;
+    border: none;
+    background-image: url(../medias/images/flecheBouton.png);
+    background-size: 70%;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    position : relative;
+    left : calc(50% - 40px);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: transparent;
+}
+
+form input[type="text"], 
+form input[type="password"] {
+    margin-bottom: 30px;
+}
+
+main a {
+    font-family: "Courier New";
+    margin-bottom: 20px;
+}
+
+form input:first-child::before {
+    content:" ";
+    position : absolute;
+    height : 100px;
+    width: 200px;
+    background: url(../medias/images/casque.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    top : -70px;
+    left : 58%;
+    transform : rotate(36deg);
+}
+h1::after {
+    content:"";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: url(../medias/images/PiqueAccueil.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    top: -130px;
+    left: 89%;
+    transform: rotate(-5deg);
+    z-index: -1;
+    
+}
