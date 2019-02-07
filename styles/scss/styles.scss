@@ -1,0 +1,47 @@
+/* 
+* Import des fonts
+*/
+@font-face {
+    font-family: 'New Athletic M54';
+    src: url("../../medias/fonts/New Athletic M54.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,700');
+
+/*
+* Imports des feuilles de style
+*/
+@import './pages/_index.scss';
+@import './pages/_header.scss';
+
+/*
+* Réglages généraux
+*/
+body, p {
+    font-family: 'Rajdhani';
+    font-weight: bold;
+    background-position: center;
+    margin : 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family : 'New Athletic M54';
+    margin: 0;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+[type="text"], [type="email"], [type="password"]  {
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    padding: 10px 0px 10px 10px;
+    background-color: #DCDDDE;
+    border-radius: 10px;
+    border: white 5px solid;
+}

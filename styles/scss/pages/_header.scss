@@ -1,0 +1,185 @@
+
+header{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "New Athletic M54";
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    padding : 0 30px 0 30px;
+    box-sizing:border-box;
+    position : relative;
+    
+    nav {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left : 20px;
+        bottom:-105px;
+        z-index : 1;
+        
+        ul {
+            padding: 15px;
+            list-style-type: none;
+            text-align: center;
+            transform: translateY(-1000px);
+            transform-origin: top;
+            border-radius: 10px;
+            opacity: 0;
+        }
+    }
+    
+    &>img {
+        height: 50px;
+        object-fit: contain;  
+    }
+    
+    .iconeMembre {
+        width: 60px;
+        border-radius: 50%;
+    }
+    
+    .reseaux {
+        .facebook{
+            width: 49.5px;
+        }
+        a:first-child img {
+            width: 50px;
+        }
+    }
+    
+    p {
+        font-size: 10vh;
+        margin-right:100px;
+        transform: scaleY(0.5);
+    }
+    
+    a {
+        color: black;
+        text-align: center;
+        padding-right: 0 ;
+        text-decoration: none;
+        z-index:100;
+    }
+}
+
+
+.apparaitre {
+    background-color: white /*#DCDDDE*/;
+    opacity: 1 !important;
+    transform: translateY(70px) !important;
+    transition-property: transform, opacity, background-color;
+    transition-duration: 0.2s;
+}
+
+.menuDeroulant li{
+    background-color: darkgrey;
+    border-radius: 7px;
+    margin-top:2px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding-left:20px;
+    padding-right:20px;
+    z-index: 5;
+}
+
+header {
+}
+
+div a + a {
+    margin-left : 10px;
+}
+
+header div {
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header>img {
+    width : 50px;
+}
+
+#iconeRegle, #iconeMenu{
+   z-index: 10;
+    width:60px;
+}
+
+
+.reseaux a+a{
+    margin-left : 0px;
+}
+
+.twitter{
+    padding-left: 10px;
+}
+
+header h1 a {
+    padding-right: 60px;
+}
+
+.reseaux{
+    z-index : 100;
+}
+
+#nav2 {
+    position: absolute;
+    left : 230px;
+    bottom:-380px;
+    /*bottom : calc(-70px - 20px);*/
+    width: 500px;
+	z-index : 1;
+}
+
+#nav2 li {
+    font-family : 'Courier New';
+    background-color : transparent;
+}
+
+#iconeRegle{
+    width : 41px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+header #pseudo{
+    margin-right: 5px;
+    margin-top: 40px;
+    font-size: 2vh;
+    padding:0;
+    font-family: 'New Athletic M54';
+    transform: none;
+    color :gray;
+}
+
+
+header .creerUnCompte{
+    opacity : 0;
+    border-radius: 10px;
+    position:absolute;
+    top : 77px;
+    left: 240px;
+    width:210px;
+    height: 250px;
+    background-color: white;
+    z-index:1;
+}
+
+header .creerUnCompte p{
+    font-size: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 23px;
+    transform: none;
+    margin: 0;
+    font-family : 'Courier New';
+    
+}
+
+
+header .succes{
+    width: 90px;
+    margin-right: 10px;
+}
